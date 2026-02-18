@@ -1,11 +1,6 @@
-interface Inputprops {
-    label: string;
-    type: string;
-    name: string;
-    options?: string[];
-}
+import type { Inputprops } from "./InputInterface"
 
-const Input = ({label, type, name, options} : Inputprops) => {
+const Input = ({label, type, name} : Inputprops) => {
   return (
     <>
         <label>{label}</label>
